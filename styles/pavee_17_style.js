@@ -1,7 +1,7 @@
 var size = 0;
 var placement = 'point';
 
-var style_Routesgoudronnees_14 = function(feature, resolution){
+var style_pavee_17 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
@@ -21,7 +21,7 @@ var style_Routesgoudronnees_14 = function(feature, resolution){
         labelText = String("");
     }
     var style = [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'round', lineJoin: 'round', width: 2.28}),
+        stroke: new ol.style.Stroke({color: 'rgba(209,158,57,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 1.748}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)

@@ -1,7 +1,7 @@
 var size = 0;
 var placement = 'point';
 
-var style_Routesgoudronnees_14 = function(feature, resolution){
+var style_Pistes_15 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
@@ -9,7 +9,7 @@ var style_Routesgoudronnees_14 = function(feature, resolution){
     var value = ""
     var labelText = "";
     size = 0;
-    var labelFont = "10px, sans-serif";
+    var labelFont = "13.0px \'MS Shell Dlg 2\', sans-serif";
     var labelFill = "#000000";
     var bufferColor = "";
     var bufferWidth = 0;
@@ -21,7 +21,7 @@ var style_Routesgoudronnees_14 = function(feature, resolution){
         labelText = String("");
     }
     var style = [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'round', lineJoin: 'round', width: 2.28}),
+        stroke: new ol.style.Stroke({color: 'rgba(162,98,20,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 0.988}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)

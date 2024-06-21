@@ -1,7 +1,7 @@
 var size = 0;
 var placement = 'point';
 
-var style_Routesgoudronnees_14 = function(feature, resolution){
+var style_lampelectrique_21 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
@@ -16,12 +16,20 @@ var style_Routesgoudronnees_14 = function(feature, resolution){
     var textAlign = "left";
     var offsetX = 8;
     var offsetY = 3;
-    var placement = 'line';
+    var placement = 'point';
     if ("" !== null) {
         labelText = String("");
     }
     var style = [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'round', lineJoin: 'round', width: 2.28}),
+        image: new ol.style.Icon({
+                  imgSize: [256, 256],
+                  scale: 0.02734375,
+                  anchor: [3, 3],
+                  anchorXUnits: "pixels",
+                  anchorYUnits: "pixels",
+                  rotation: 0.0,
+                  src: "styles/lamp-modern-right-svgrepo-com (1).svg"
+            }),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)

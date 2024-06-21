@@ -112,7 +112,7 @@ var map = new ol.Map({
     overlays: [overlayPopup],
     layers: layersList,
     view: new ol.View({
-        extent: [-20037508.342789, -20037508.342789, 20037508.342789, 20037508.342789], maxZoom: 28, minZoom: 1, projection: new ol.proj.Projection({
+        extent: [-16.456311, 16.044208, -16.399173, 16.072806], maxZoom: 28, minZoom: 9, projection: new ol.proj.Projection({
             code: 'EPSG:4326',
             //extent: [-20037508.342789, -20037508.342789, 20037508.342789, 20037508.342789],
             units: 'degrees'})
@@ -123,7 +123,7 @@ var layerSwitcher = new ol.control.LayerSwitcher({tipLabel: "Layers"});
 map.addControl(layerSwitcher);
 
     var searchLayer = new SearchLayer({
-      layer: lyr_UGB_2,
+      layer: lyr_UGB_3,
       colName: 'Code',
       zoom: 10,
       collapsed: true,
@@ -137,7 +137,7 @@ map.addControl(layerSwitcher);
     
 
 //initial view - epsg:3857 coordinates if not "Match project CRS"
-map.getView().fit([-20037508.342789, -20037508.342789, 20037508.342789, 20037508.342789], map.getSize());
+map.getView().fit([-16.456311, 16.044208, -16.399173, 16.072806], map.getSize());
 
 var NO_POPUP = 0
 var ALL_FIELDS = 1

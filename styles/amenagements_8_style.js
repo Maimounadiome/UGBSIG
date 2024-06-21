@@ -1,7 +1,7 @@
 var size = 0;
 var placement = 'point';
 
-var style_Routesgoudronnees_14 = function(feature, resolution){
+var style_amenagements_8 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
@@ -16,12 +16,12 @@ var style_Routesgoudronnees_14 = function(feature, resolution){
     var textAlign = "left";
     var offsetX = 8;
     var offsetY = 3;
-    var placement = 'line';
+    var placement = 'point';
     if ("" !== null) {
         labelText = String("");
     }
     var style = [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'round', lineJoin: 'round', width: 2.28}),
+        fill: new ol.style.Fill({color: 'rgba(3,249,65,1.0)'}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
